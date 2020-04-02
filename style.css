@@ -13,10 +13,8 @@ html {
 #root {
   max-width: 450px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 1em;
 }
-
-
 [type="text"],
 [type="password"],
 button {
@@ -39,6 +37,8 @@ button {
 input {
   width: 200px;
 }
+
+
 
 [type="text"]:active,
 [type="text"]:focus,
@@ -92,4 +92,27 @@ div {
   display: block;
   padding: 10px;
   text-align: center;
+}
+
+body{
+  position: fixed; 
+  
+  width: 100%;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-color:#008000 ;
+}
+
+.box{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 0 20px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
