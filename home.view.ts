@@ -9,27 +9,42 @@ export class HomeView {
     private title: HTMLElement;
 
     constructor() {
-        this.app = document.querySelector('#root');
-
-        this.challengeButton = 
-            Object.assign(document.createElement('button'), 
-                { textContent: 'Challenge' });
-        this.singlePlayButton = 
-            Object.assign(document.createElement('button'), 
-                { textContent: 'Single Play' });
-
-        this.title = document.createElement('h1');
-        this.title.textContent = 'Code Blitz';
-        this.app.append(this.title, this.challengeButton, this.singlePlayButton);    
-
-        this.challengeButton.addEventListener('click', event => {
-            const { origin, pathname } = location;
-            location.replace(origin+pathname+'?page=challenge');
+        this.app = document.getElementById('root')
+            const html = `
+                <img src="http://icon-library.com/images/blitz-icon/blitz-icon-18.jpg" alt="Blitz Icon" width="128" height="140">
+                <form id='home' method='post'>
+                    <h1>Welcome!</h1>
+                    <div>
+                        <button type='submit' class="btn textbtn">Challenge</button>
+                        
+                    </div>
+                    <div>
+                        <button type='singlePlay' class="btn textbtn">Single Play</button>
+                        
+                    </div>
+                   
+                </form>
+        `;
+        this.app.innerHTML = html;
+    
+        document.getElementById('home')
+             .addEventListener('submit', event => {
+                //event.preventDefault(); -- actually post is handy, no need for ajax call
+                const { origin, pathname } = location;
+                setTimeout(()=>{ 
+                    // timeout is temporary hack pending server auth implementation
+                    location.replace(origin+pathname+'?page=challenge');
+            })
         });
-
-        this.singlePlayButton.addEventListener('click', event => {
-            alert('not yet implemented')
-        });
+        document.getElementById('home')
+        .addEventListener('singlePlay', event => {
+           //event.preventDefault(); -- actually post is handy, no need for ajax call
+           const { origin, pathname } = location;
+           setTimeout(()=>{ 
+               // timeout is temporary hack pending server auth implementation
+               location.replace(origin+pathname+'?page=login');
+       })
+   });
         
     //    this._temporaryAgeText = '';
     //    this._initLocalListeners();
