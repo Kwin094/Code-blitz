@@ -14,7 +14,7 @@ export class LoginView {
         const html = `
             <div body = 'body'>
             <div class = 'box'>
-                <img src="https://lh4.googleusercontent.com/xCv75cDFObxFUmJLWsaNaXLqVpPTJosOfMDM7Va7E0ftUyNU6Rd0q_FDdlfm6J9G7CW1ZAjvsQjuix_-bnVg6nkRCCYhHK5OZFTaUzO6IHMBivEdA1oB=w1280" alt="Blitz Icon" width="235" height="130">
+                <img src="https://lh5.googleusercontent.com/e1zlxn6kj-9k2QuNR1aDVkmNYXoDwdvXMF_k-6L-LmbB4Ny_RdH1GnAD9fBMbW8RhBikZz5c=w16383" alt="Blitz Icon" width="215" height="134">
                 <form id='loginForm' method='post'>
                     <h1>Clode Blitz</h1>
                     <div>
