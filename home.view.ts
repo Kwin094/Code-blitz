@@ -11,9 +11,9 @@ export class HomeView {
     constructor() {
         this.app = document.getElementById('root')
             const html = `
-                <img src="http://icon-library.com/images/blitz-icon/blitz-icon-18.jpg" alt="Blitz Icon" width="128" height="140">
+            <img src="https://lh5.googleusercontent.com/e1zlxn6kj-9k2QuNR1aDVkmNYXoDwdvXMF_k-6L-LmbB4Ny_RdH1GnAD9fBMbW8RhBikZz5c=w16383" alt="Blitz Icon" width="215" height="134">
                 <form id='home' method='post'>
-                    <h1>Welcome!</h1>
+                    <h1>Welcome! </h1> 
                     <div>
                         <button type='submit' class="btn textbtn">Challenge</button>
                         
